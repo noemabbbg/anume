@@ -27,6 +27,8 @@ buy_pear3 = InlineKeyboardButton(text="Триллер", callback_data="Triller")
 buy_pear5 = InlineKeyboardButton(text="Драма", callback_data="Drama")
 buy_pear6 = InlineKeyboardButton(text="Исекай", callback_data="Isekai")
 
+
+MHA=InlineKeyboardButton(text='Моя геройская академия(1)', callback_data='MHA')
 clavaViborGenre.insert(buy_pear1)
 clavaViborGenre.insert(buy_pear2)
 #clavaViborGenre.insert(buy_pear3)
@@ -43,6 +45,7 @@ ClavaDrama.insert(back)
 Clavaromantik=InlineKeyboardMarkup(row_width=1)
 Pharh=InlineKeyboardButton(text='Эта фарфоровая кукла влюбилась', callback_data='Pharh')
 Zugumomo=InlineKeyboardButton(text='Цугумомо', callback_data='Zugumomo')
+
 Clavaromantik.insert(Pharh)
 Clavaromantik.insert(Zugumomo)
 Clavaromantik.insert(back)  
@@ -53,6 +56,7 @@ ClavaEkhn=InlineKeyboardMarkup(row_width=1)
 KRD=InlineKeyboardButton(text='Клинок, рассекающий демонов (1)', callback_data='KRD')
 ClavaEkhn.insert(KRD)
 ClavaEkhn.insert(Zugumomo)
+ClavaEkhn.insert(MHA)
 ClavaEkhn.insert(back)
 
 
