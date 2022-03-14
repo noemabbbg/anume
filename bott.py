@@ -471,6 +471,22 @@ async def process_video_command(call: CallbackQuery):
         await call.bot.send_message(call.from_user.id, 'Для просмотра сначала подпишись на канал', reply_markup=checkSubm)
     buffer=3
     db.addbuffer(call.from_user.id, buffer)
+
+@dp.callback_query_handler(text_contains="MHA")
+async def process_video_command(call: CallbackQuery):
+    await call.answer(cache_time=60)
+    callback_data = call.data
+    logging.info(f"callback_data='{callback_data}'")
+    if check_sub_channel(await bot.get_chat_member(chat_id=channel_id, user_id=call.from_user.id)):
+        await bot.delete_message(call.from_user.id, call.message.message_id)
+        #await bot.send_photo(call.from_user.id, caption='*Описание:* \n animeeeeee"*', photo="AgACAgIAAxkDAAIhVWINR-aKU3-Tz-yo8dyvgNeYy1u9AAJVvDEbkSBoSNxtsPC6YGn7AQADAgADeAADIwQ", reply_markup=clavaChangeState, parse_mode="Markdown")
+        await call.message.answer(text='*Описание:* \n anumeeee', reply_markup=clavaChangeState, parse_mode="Markdown")
+        
+    else:
+        await bot.delete_message(call.from_user.id, call.message.message_id)
+        await call.bot.send_message(call.from_user.id, 'Для просмотра сначала подпишись на канал', reply_markup=checkSubm)
+    buffer=4
+    db.addbuffer(call.from_user.id, buffer)
 ##### требует конкретной записи, но куда и как?????
 
 
@@ -495,11 +511,7 @@ async def process_video_command(call: CallbackQuery):
 
 
 
-@dp.message_handler(commands=['video'])
-async def process_start_command(message: types.Message):
-    await bot.sen
-    await message.answer_video(message.video.file_id)
-    
+
 
 
 
