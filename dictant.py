@@ -46,6 +46,12 @@ devochkaZayka={}
 KRD2={}
 codeGeass={}
 codeGeass2={}
+tvoeImya={
+     1:"BAACAgIAAxkBAAEOz4ViNHOQNkBQ-B4xRbqn8-EyPbQwbAACrA8AAmir0Uq_ZnW0jxU-YyME"
+}
+
+dityaShud={1:'BAACAgIAAxkBAAEOz49iNHTWvsEYAAEHwG0gu4smjycXLVYAAiIGAAIHncFJf0EIH5epAAF7IwQ'}
+KRDInfinityPoezd={1:'BAACAgIAAxkBAAEOz41iNHTOHtxIjQl-dDfVLDgEz9VntQACnhEAAqk5QUjAx-sFe3OB1SME'}
 
 Maindict={
     1:KRD,
@@ -58,13 +64,10 @@ Maindict={
     8:KRD2,
     9:codeGeass,
     10:codeGeass2,
+    100:tvoeImya,
+    101:dityaShud,
+    102:KRDInfinityPoezd,
 }
-tvoeImya={
-     1:"BAACAgIAAxkBAAEOz4ViNHOQNkBQ-B4xRbqn8-EyPbQwbAACrA8AAmir0Uq_ZnW0jxU-YyME"
-}
-
-dityaShud={1:'BAACAgIAAxkBAAEOz49iNHTWvsEYAAEHwG0gu4smjycXLVYAAiIGAAIHncFJf0EIH5epAAF7IwQ'}
-KRDInfinityPoezd={1:'BAACAgIAAxkBAAEOz41iNHTOHtxIjQl-dDfVLDgEz9VntQACnhEAAqk5QUjAx-sFe3OB1SME'}
 
 
 
