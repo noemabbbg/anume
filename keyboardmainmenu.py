@@ -38,6 +38,7 @@ filmClava.insert(KRDInfinityPoezd)
 
 watchFilm=InlineKeyboardMarkup(row_width=1)
 watch=InlineKeyboardButton(text="Смотреть", callback_data="watch")
+watchFilm.insert(watch)
 watchFilm.insert(btnreturnmenu)
 
 clavaChangeState=InlineKeyboardMarkup(row_width=1)
