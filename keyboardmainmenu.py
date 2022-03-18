@@ -1,3 +1,4 @@
+from subprocess import call
 from aiogram.types import ReplyKeyboardRemove, \
     ReplyKeyboardMarkup, KeyboardButton, \
     InlineKeyboardMarkup, InlineKeyboardButton
@@ -10,10 +11,11 @@ from aiogram.types import ReplyKeyboardRemove, \
 clava = InlineKeyboardMarkup(row_width=1)
 btnreturnmenu=InlineKeyboardButton(text='вернуться в меню', callback_data='returnMenu')
 buy_pear1 = InlineKeyboardButton(text="какой жанр хочешь посмотреть?👀", callback_data="топ")
-
+film=InlineKeyboardButton(text="анимационные фильмы", callback_data="film")
 buy_pear15=InlineKeyboardButton(text="управление подпиской", callback_data="subscribemanagment")
 zakladki=InlineKeyboardButton(text="Закладки", callback_data="zakladki")
 clava.insert(buy_pear1)
+clava.insert(film)
 #clava.insert(zakladki)
 #clava.insert(buy_pear13)
 #clava.insert(buy_pear15)
@@ -21,7 +23,22 @@ clava.insert(buy_pear1)
 
 
 
+filmClava=InlineKeyboardMarkup(row_width=1)
+tvoeImya=InlineKeyboardButton(text="Твое имя", callback_data="tvoeImya")
+dityaShud=InlineKeyboardButton(text="Дитя чудовища", callback_data="dityaShud")
+KRDInfinityPoezd=InlineKeyboardButton(text="Клинок, рассекающий демонов: Бесконечный поезд", callback_data="KRDInfinityPoezd")
+filmClava.insert(tvoeImya)
+filmClava.insert(dityaShud)
+filmClava.insert(KRDInfinityPoezd)
 
+
+
+
+
+
+watchFilm=InlineKeyboardMarkup(row_width=1)
+watch=InlineKeyboardButton(text="Смотреть", callback_data="watch")
+watchFilm.insert(btnreturnmenu)
 
 clavaChangeState=InlineKeyboardMarkup(row_width=1)
 buy_pear5 = InlineKeyboardButton(text="начать смотреть с начала", callback_data="начать с начала")
