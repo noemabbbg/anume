@@ -40,11 +40,39 @@ MHA={
     12:"BAACAgIAAxkBAAEOuKpiLvs3EC-BjOyXGX5_k9DEVcinvQACcAgAAqzEYUkdv7zvDjFS6SME",
     13:"BAACAgIAAxkBAAEOuK5iLvs-LwcsRKhfOG5Inj3U7sctbgACcwgAAqzEYUm9ra8KA6SNiSME",
 }
-
+ehoTerrora={}
+sharlotta={}
+devochkaZayka={}
+KRD2={}
+codeGeass={}
+codeGeass2={}
 
 Maindict={
     1:KRD,
     2:Pharh,
     3:Zugumomo,
     4: MHA,
+    5:ehoTerrora,
+    6:sharlotta,
+    7:devochkaZayka,
+    8:KRD2,
+    9:codeGeass,
+    10:codeGeass2,
+}
+tvoeImya={
+     1:"BAACAgIAAxkBAAEOz4ViNHOQNkBQ-B4xRbqn8-EyPbQwbAACrA8AAmir0Uq_ZnW0jxU-YyME"
+}
+
+dityaShud={1:'BAACAgIAAxkBAAEOz49iNHTWvsEYAAEHwG0gu4smjycXLVYAAiIGAAIHncFJf0EIH5epAAF7IwQ'}
+KRDInfinityPoezd={1:'BAACAgIAAxkBAAEOz41iNHTOHtxIjQl-dDfVLDgEz9VntQACnhEAAqk5QUjAx-sFe3OB1SME'}
+
+
+
+
+
+FilmDict={
+    1:tvoeImya,
+    2:dityaShud,
+    3:KRDInfinityPoezd,
+
 }
