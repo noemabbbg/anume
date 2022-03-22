@@ -517,6 +517,7 @@ async def process_video_command(call: CallbackQuery):
 ##### требует конкретной записи, но куда и как?????
 
 
+
 @dp.callback_query_handler(text_contains="tvoeImya")
 async def process_video_command(call: CallbackQuery):
     await call.answer(cache_time=60)
@@ -524,8 +525,8 @@ async def process_video_command(call: CallbackQuery):
     logging.info(f"callback_data='{callback_data}'")
     if check_sub_channel(await bot.get_chat_member(chat_id=channel_id, user_id=call.from_user.id)):
         await bot.delete_message(call.from_user.id, call.message.message_id)
-        #await bot.send_photo(call.from_user.id, caption='*Описание:* \n animeeeeee"*', photo="AgACAgIAAxkDAAIhVWINR-aKU3-Tz-yo8dyvgNeYy1u9AAJVvDEbkSBoSNxtsPC6YGn7AQADAgADeAADIwQ", reply_markup=clavaChangeState, parse_mode="Markdown")
-        await call.message.answer(text='*Описание:* \n anumeeee', reply_markup=keyboardmainmenu.watchFilm, parse_mode="Markdown")
+        await bot.send_photo(call.from_user.id, caption='*Описание:* \n Девушка из провинциальной деревушки "Итомори". Парень из Токио. Их судьбы никогда бы не пересеклись, если бы не вмешалась мистика. Однажды, Мицука, именно так зовут девушку, загадывает желание - "стать симпатичным парнем из Токио" и оно сбывается. Вот только в моменты, когда она становится этим симпатичным парнем, Таки, так зовут парня, становится ей. Они в буквальном смысле - меняются местами.', photo="AgACAgIAAxkBAAEO1O9iNcL-0H7wyoG4DJix0vK09qBSBwACNbcxG6TnsEleha7TCHtAuQEAAwIAA3gAAyME", reply_markup=keyboardmainmenu.watchFilm, parse_mode="Markdown")
+        
         
     else:
         await bot.delete_message(call.from_user.id, call.message.message_id)
@@ -542,8 +543,8 @@ async def process_video_command(call: CallbackQuery):
     logging.info(f"callback_data='{callback_data}'")
     if check_sub_channel(await bot.get_chat_member(chat_id=channel_id, user_id=call.from_user.id)):
         await bot.delete_message(call.from_user.id, call.message.message_id)
-        #await bot.send_photo(call.from_user.id, caption='*Описание:* \n animeeeeee"*', photo="AgACAgIAAxkDAAIhVWINR-aKU3-Tz-yo8dyvgNeYy1u9AAJVvDEbkSBoSNxtsPC6YGn7AQADAgADeAADIwQ", reply_markup=clavaChangeState, parse_mode="Markdown")
-        await call.message.answer(text='*Описание:* \n anumeeee', reply_markup=keyboardmainmenu.watchFilm, parse_mode="Markdown")
+
+        await bot.send_photo(call.from_user.id, caption='*Описание:* \n История происходит в двух реальностях: человеческом мире (Сибуя, Токио) и мире монстров (Сибутэнмати). В этих двух мирах, которые не должны пересекаться, живут одинокий мальчик и одинокий монстр. Однажды случается так, что мальчик попадает в мир монстров, становится учеником монстра по имени Куматэцу и принимает новое имя Кюта.', photo="AgACAgIAAxkBAAEO1O1iNcK5GkLi1T-h17sjjNE6zwgFewACNLcxG6TnsEnwqmXu3qv59QEAAwIAA3gAAyME", reply_markup=keyboardmainmenu.watchFilm, parse_mode="Markdown")
         
     else:
         await bot.delete_message(call.from_user.id, call.message.message_id)
@@ -559,8 +560,7 @@ async def process_video_command(call: CallbackQuery):
     logging.info(f"callback_data='{callback_data}'")
     if check_sub_channel(await bot.get_chat_member(chat_id=channel_id, user_id=call.from_user.id)):
         await bot.delete_message(call.from_user.id, call.message.message_id)
-        #await bot.send_photo(call.from_user.id, caption='*Описание:* \n animeeeeee"*', photo="AgACAgIAAxkDAAIhVWINR-aKU3-Tz-yo8dyvgNeYy1u9AAJVvDEbkSBoSNxtsPC6YGn7AQADAgADeAADIwQ", reply_markup=clavaChangeState, parse_mode="Markdown")
-        await call.message.answer(text='*Описание:* \n anumeeee', reply_markup=keyboardmainmenu.watchFilm, parse_mode="Markdown")
+        await bot.send_photo(call.from_user.id, caption='*Описание:* \n На «Бесконечном поезде» пропадают люди. Подозревая, что это проделки демонов, на поезд отправляют Рэнгоку Кёджиро, Хашира Пламени, а также наших героев - Танджиро, Зэницу и Иноске. Сможет ли новоиспечённый отряд разобраться, какую страшную тайну таит в себе этот поезд?', photo="AgACAgIAAxkBAAEO1OdiNcJ2fTtsFsTo9zlgnnvVpWOYygACM7cxG6TnsEkKjjyBYA0_4gEAAwIAA3gAAyME", reply_markup=keyboardmainmenu.watchFilm, parse_mode="Markdown")
         
     else:
         await bot.delete_message(call.from_user.id, call.message.message_id)
